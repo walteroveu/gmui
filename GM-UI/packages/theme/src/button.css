@@ -1,0 +1,195 @@
+@import "common/general.css";
+@b gm {
+    @e button {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #dcdfe6;
+        color: #606266;
+        -webkit-appearance: none;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        transition: .1s;
+        font-weight: 500;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        @m default {
+            &:hover,
+            &:focus {
+                background: rgba(var(--color-primary), 0.05);
+                border-color: rgba(var(--color-primary), 0.8);
+                color: var(--color-primary);
+            }
+            &:disabled {
+                opacity: 0.3;
+            }
+            &:active {
+                background: var(--color-white);
+                outline: none;
+            }
+            @when plain {
+                border: 1px solid var(--color-primary);
+                &:hover,
+                &:focus {
+                    background: var(--color-white);
+                    border-color: rgba(var(--color-primary), 0.8);
+                    color: var(--color-primary);
+                }
+                &:disabled {
+                    border: 1px solid var(--color-primary);
+                }
+            }
+        }
+        @m primary {
+            color: #fff;
+            background-color: #409eff;
+            border-color: #409eff;
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+            &:disabled {
+                opacity: 0.3;
+            }
+            @when plain {
+                background: rgba(var(--color-primary), 0.05);
+                border-color: rgba(var(--color-primary), 0.8);
+                color: var(--color-primary);
+                &:hover,
+                &:focus {
+                    opacity: 1;
+                    background: var(--color-primary);
+                    border: 1px solid var(--color-primary);
+                    color: var(--color-white);
+                }
+                &:disabled {
+                    opacity: 0.3;
+                    background: rgba(var(--color-primary), 0.05);
+                    border-color: rgba(var(--color-primary), 0.8);
+                    color: var(--color-primary);
+                }
+            }
+        }
+        @m danger {
+            color: #fff;
+            background-color: #f56c6c;
+            border-color: #f56c6c;
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+            &:disabled {
+                opacity: 0.3;
+            }
+            @when plain {
+                background: rgba(var(--color-danger), 0.05);
+                border-color: rgba(var(--color-danger), 0.8);
+                color: var(--color-danger);
+                &:hover,
+                &:focus {
+                    opacity: 1;
+                    background: var(--color-danger);
+                    border: 1px solid var(--color-danger);
+                    color: var(--color-white);
+                }
+                &:disabled {
+                    opacity: 0.3;
+                    cursor: not-allowed;
+                    background: rgba(var(--color-danger), 0.05);
+                    border-color: rgba(var(--color-danger), 0.8);
+                    color: var(--color-danger);
+                }
+            }
+        }
+        @m info {
+            color: #fff;
+            background-color: #909399;
+            border-color: #909399;
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+            &:disabled {
+                opacity: 0.3;
+            }
+            @when plain {
+                background: rgba(var(--color-info), 0.05);
+                border-color: rgba(var(--color-info), 0.8);
+                color: var(--color-info);
+                &:hover,
+                &:focus {
+                    opacity: 1;
+                    background: var(--color-info);
+                    border: 1px solid var(--color-info);
+                    color: var(--color-white);
+                }
+                &:disabled {
+                    opacity: 0.3;
+                    background: rgba(var(--color-info), 0.05);
+                    border-color: rgba(var(--color-info), 0.8);
+                    color: var(--color-info);
+                }
+            }
+        }
+        @m warn {
+            color: #fff;
+            background-color: #e6a23c;
+            border-color: #e6a23c;
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+            &:disabled {
+                opacity: 0.3;
+            }
+            @when plain {
+                background: rgba(var(--color-warning), 0.05);
+                border-color: rgba(var(--color-warning), 0.8);
+                color: var(--color-warning);
+                &:hover,
+                &:focus {
+                    opacity: 1;
+                    background: var(--color-warning);
+                    border: 1px solid var(--color-warning);
+                    color: var(--color-white);
+                }
+                &:disabled {
+                    opacity: 0.3;
+                    background: rgba(var(--color-warning), 0.05);
+                    border-color: rgba(var(--color-warning), 0.8);
+                    color: var(--color-warning);
+                }
+            }
+        }
+        &.is-round {
+            border-radius: 20px;
+        }
+        &.is-plain {
+            color: #409eff;
+            background: #ecf5ff;
+            border-color: #b3d8ff;
+        }
+        @m size-medium {
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        @m size-small {
+            padding: 9px 15px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        @m size-mini {
+            padding: 7px 15px;
+        }
+    }
+}

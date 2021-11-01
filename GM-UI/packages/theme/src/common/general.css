@@ -1,0 +1,36 @@
+:root {
+    /* Transition
+    -------------------------- */
+    --all-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    --fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    --fade-linear-transition: opacity 200ms linear;
+    --md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+    --border-transition-base: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    --color-transition-base: color .2s cubic-bezier(.645, .045, .355, 1);
+    /* Colors
+    -------------------------- */
+    --color-primary: #3FAAF5;
+    --color-success: #13ce66;
+    --color-warning: #f7ba2a;
+    --color-danger: #ff4949;
+    --color-info: #50bfff;
+    --color-close: #b4bccc;
+    --color-white: #fff;
+    /* Button
+    -------------------------- */
+    --button-font-size: 14px;
+    --button-border-radius: var(--border-radius-base);
+    --button-padding-vertical: 10px;
+    --button-padding-horizontal: 15px;
+    --button-large-font-size: 16px;
+    --button-large-padding-vertical: 11px;
+    --button-large-padding-horizontal: 19px;
+    --button-small-font-size: 12px;
+    --button-small-padding-vertical: 7px;
+    --button-small-padding-horizontal: 9px;
+    --button-mini-font-size: 12px;
+    --button-mini-padding-vertical: 4px;
+    --button-mini-padding-horizontal: 4px;
+    --button-default-fill: var(--color-white);
+    --button-default-border: #c4c4c4;
+}

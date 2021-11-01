@@ -1,0 +1,23 @@
+{
+    "name": "gm-ui-theme",
+    "version": "1.0.0",
+    "description": "gm-ui component theme.",
+    "main": "lib/index.css",
+    "scripts": {
+        "dev": "gulp build && gulp watch",
+        "build": "gulp build"
+    },
+    "keywords": [
+        "gm-ui",
+        "theme"
+    ],
+    "author": "wh",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-cssmin": "^0.1.7",
+        "gulp-postcss": "^6.1.1",
+        "postcss-salad": "^1.0.5"
+    },
+    "dependencies": {}
+}

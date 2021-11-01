@@ -1,0 +1,38 @@
+{
+    "开发指南": [{
+            "name": "giud",
+            "path": "/giud",
+            "desc": "介绍"
+        },
+        {
+            "name": "install",
+            "path": "/install",
+            "desc": "安装"
+        },
+        {
+            "name": "start",
+            "path": "/start",
+            "desc": "快速开始"
+        }
+    ],
+    "组件": [{
+            "desc": "基础组件",
+            "path": "/component",
+            "items": [{
+                "desc": "Button 按钮",
+                "name": "button",
+                "path": "/button"
+            }]
+        },
+        {
+            "desc": "视图组件",
+            "path": "/component",
+            "items": []
+        },
+        {
+            "desc": "通用业务组件",
+            "path": "/component",
+            "items": []
+        }
+    ]
+}
